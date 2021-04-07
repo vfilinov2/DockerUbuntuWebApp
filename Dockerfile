@@ -13,7 +13,7 @@ apt update
 
 WORKDIR /tmp/at/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git . ;\
-wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz -O tomcat.tar.gz ; \
+wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz -O tomcat.tar.gz ;\
 tar xvfz tomcat.tar.gz ;\
 cp -r ./apache-tomcat-9.0.44/* "$CATALINA_HOME" ;\
 mvn package ;\
