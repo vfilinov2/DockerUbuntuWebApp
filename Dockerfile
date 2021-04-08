@@ -18,7 +18,7 @@ tar xvfz tomcat.tar.gz ;\
 cp -r ./apache-tomcat-9.0.44/* "$CATALINA_HOME" ;\
 mvn package ;\
 cp ./target/hello-1.0.war "$CATALINA_HOME"/webapps ;\
-apt remove maven git wget -y ;\
+apt remove maven git wget -y 
 EXPOSE 8080
 CMD $CATALINA_HOME/bin/catalina.sh run
 
